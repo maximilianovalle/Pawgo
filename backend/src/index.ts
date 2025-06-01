@@ -1,3 +1,5 @@
+// Basic Express server setup - runs on "npm run dev".
+
 import express from 'express';
 import dotenv from 'dotenv';
 
