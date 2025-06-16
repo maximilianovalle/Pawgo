@@ -8,7 +8,8 @@
     height: 8vh;
     padding: 0px 5vw;
 
-    color: black;
+    color: #fff4f4;
+    background-color: #1a1919;
     overflow: hidden;
 
     display: flex;
@@ -21,14 +22,12 @@
     font-size: 2.5rem;
 }
 
-.iconsContainer, .headerIcon {
+.iconsContainer {
+    gap: 0px 1vw;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.iconsContainer {
-    gap: 0px 30px;
 }
 
 
@@ -38,7 +37,7 @@
 
 /* MOBILE UI */
 
-@media (max-width: 768px) {
+@media (max-width: 560px) {
     .iconsContainer {
         display: none;
     }

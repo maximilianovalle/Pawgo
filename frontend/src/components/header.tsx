@@ -1,9 +1,10 @@
 import '../reset.css'
 import './header.css'
 
-import UserDropdown from './userDropdown'
-import CartDropdown from './cartDropdown'
-import MobileHamburger from './mobileHamburger'
+import SearchBar from './searchBar'
+import UserDropdown from './iconButtons/userDropdown'
+import CartDropdown from './iconButtons/cartDropdown'
+import MobileHamburger from './iconButtons/mobileHamburger'
 
 import type { FC } from 'react' // FC = Functional Component
 
@@ -13,12 +14,16 @@ const Header: FC = () => {
 
             <h1 className="storeName">Pawgo</h1>
 
-            {/* TODO: search bar */}
+            {/* search bar */}
+            <SearchBar />
 
+            {/* icons */}
             <div className="iconsContainer">
                 <UserDropdown />
                 <CartDropdown />
             </div>
+
+            {/* TODO: mobile search */}
 
             {/* mobile hamburger */}
             <div className="mobileIconsContainer">

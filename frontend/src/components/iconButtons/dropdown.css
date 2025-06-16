@@ -1,7 +1,7 @@
 .dropdownBtn {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     
-    color: black;
+    color: #fff4f4;
     background-color: transparent;
     gap: 0px 4px;
     border: none;
@@ -20,7 +20,7 @@
     font-size: 1.25rem;
     font-weight: bold;
     
-    color: black;
+    color: #fff4f4;
     background-color: transparent;
     border: none;
     cursor: pointer;

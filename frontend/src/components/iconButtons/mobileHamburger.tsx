@@ -1,4 +1,4 @@
-import '../reset.css'
+import '../../reset.css'
 import './dropdown.css'
 
 import type { FC } from 'react'
