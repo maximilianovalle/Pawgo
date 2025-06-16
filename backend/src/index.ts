@@ -1,5 +1,9 @@
 // Application Entry Point + Server Startup
+// Express, Node, Typescript
 
+// const express = require('express);
+// const dotenv = require('dotenv');
+// const { testDBConnection } = require('./db);
 import express from 'express';
 import dotenv from 'dotenv';
 import { testDBConnection } from './db';
@@ -26,4 +30,5 @@ if (process.env.NODE_ENV !== 'test') { // server doesn't start if being tested
     });
 }
 
+// module.exports = app;
 export default app;

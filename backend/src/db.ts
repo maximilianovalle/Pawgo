@@ -1,5 +1,7 @@
 // Database Setup + Connection Test
 
+// .ts because file does not render HTML/React
+
 import { Pool } from 'pg';
 import dotenv from 'dotenv';
 
