@@ -10,7 +10,8 @@ function App() {
   return (
     <Routes>
 
-      {/* Define routes here, example: */}
+      {/* Define routes here: */}
+      
       <Route path="/" element={<Main />} />
 
     </Routes>

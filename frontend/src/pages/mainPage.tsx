@@ -1,4 +1,7 @@
+import '../reset.css'
+
 import { useEffect } from "react"
+import Header from '../components/header'
 
 function Main() {
     useEffect(() => {
@@ -6,8 +9,10 @@ function Main() {
     }, []);
 
     return (
-        <>
-        </>
+        <div>
+            <Header />
+
+        </div>
     )
 }
 
