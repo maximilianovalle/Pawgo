@@ -1,40 +1,32 @@
-import './header.css'
 import '../reset.css'
+import './header.css'
 
-import { FaUser } from "react-icons/fa";
-import { FaCartShopping } from "react-icons/fa6"
-import { FaChevronDown } from "react-icons/fa"
+import UserDropdown from './userDropdown'
+import CartDropdown from './cartDropdown'
+import MobileHamburger from './mobileHamburger'
 
-import { IoMenu } from "react-icons/io5";
+import type { FC } from 'react' // FC = Functional Component
 
-function Header() {
+const Header: FC = () => {
     return (
-        <div className="main">
+        <div className="headerMain">
 
-            <h1 id="storeName">Pawgo</h1>
+            <h1 className="storeName">Pawgo</h1>
 
-            {/* search bar */}
+            {/* TODO: search bar */}
 
-            <div id="iconsContainer">
-                <div className='headerIcon'>
-                    <FaUser />
-                    <FaChevronDown />
-                </div>
-
-                <div className='headerIcon'>
-                    <FaCartShopping />
-                    <FaChevronDown />
-                </div>
+            <div className="iconsContainer">
+                <UserDropdown />
+                <CartDropdown />
             </div>
 
-            <div id="mobileIconsContainer">
-                <div className='headerIcon'>
-                    <IoMenu />
-                </div>
+            {/* mobile hamburger */}
+            <div className="mobileIconsContainer">
+                <MobileHamburger />
             </div>
 
         </div>
-    )
-}
+    );
+};
 
 export default Header

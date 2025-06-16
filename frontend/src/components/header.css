@@ -3,7 +3,7 @@
     src: url(../assets/aloha-nineties.regular.otf);
 }
 
-.main {
+.headerMain {
     width: 100%;
     height: 8vh;
     padding: 0px 5vw;
@@ -16,40 +16,34 @@
     align-items: center;
 }
 
-#storeName {
+.storeName {
     font-family: 'Aloha Nineties';
     font-size: 2.5rem;
 }
 
-#iconsContainer, .headerIcon {
+.iconsContainer, .headerIcon {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#iconsContainer {
+.iconsContainer {
     gap: 0px 30px;
 }
 
-.headerIcon {
-    font-size: 1.25rem;
-    
-    gap: 0px 4px;
-}
 
-
-#mobileIconsContainer {
+.mobileIconsContainer {
     display: none;
 }
 
 /* MOBILE UI */
 
 @media (max-width: 768px) {
-    #iconsContainer {
+    .iconsContainer {
         display: none;
     }
 
-    #mobileIconsContainer {
+    .mobileIconsContainer {
         display: block;
     }
 
@@ -58,7 +52,7 @@
         height: 6vh;
     }
 
-    #storeName {
+    .storeName {
         font-size: 1.8rem;
     }
 
