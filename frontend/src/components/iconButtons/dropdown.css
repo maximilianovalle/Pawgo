@@ -1,7 +1,7 @@
 .dropdownBtn {
     font-size: 1.2rem;
     
-    color: #fff4f4;
+    color: #fff7f5;
     background-color: transparent;
     gap: 0px 4px;
     border: none;
@@ -10,6 +10,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.userRightArrow, .cartRightArrow, .userDownArrow, .cartDownArrow {
+    color: #fff7f5;
 }
 
 .userDownArrow, .cartDownArrow {

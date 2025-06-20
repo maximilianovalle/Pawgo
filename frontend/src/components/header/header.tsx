@@ -1,10 +1,12 @@
-import '../reset.css'
+import '../../reset.css'
 import './header.css'
 
+import { IoPawSharp } from "react-icons/io5"
+
 import SearchBar from './searchBar'
-import UserDropdown from './iconButtons/userDropdown'
-import CartDropdown from './iconButtons/cartDropdown'
-import MobileHamburger from './iconButtons/mobileHamburger'
+import UserDropdown from '../iconButtons/userDropdown'
+import CartDropdown from '../iconButtons/cartDropdown'
+import MobileHamburger from '../iconButtons/mobileHamburger'
 
 import type { FC } from 'react' // FC = Functional Component
 
@@ -12,10 +14,13 @@ const Header: FC = () => {
     return (
         <div className="headerMain">
 
-            <h1 className="storeName">Pawgo</h1>
+            {/* store name */}
+            <h1 className="storeName">Pawgo<IoPawSharp className='storeNameIcon'/></h1>
 
             {/* search bar */}
-            <SearchBar />
+            <div className='searchBarContainer'>
+                <SearchBar />
+            </div>
 
             {/* icons */}
             <div className="iconsContainer">
@@ -23,9 +28,7 @@ const Header: FC = () => {
                 <CartDropdown />
             </div>
 
-            {/* TODO: mobile search */}
-
-            {/* mobile hamburger */}
+            {/* mobile icons */}
             <div className="mobileIconsContainer">
                 <MobileHamburger />
             </div>
